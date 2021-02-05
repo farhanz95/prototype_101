@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^spmoa\.web\.nakmenangtender\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.spmoa\.web\.nakmenangtender\.com$
+RewriteRule ^/?$ "http\:\/\/spmoa\.web\.nakmenangtender\.com\/index\.php\/site\/login" [R=301,L]
+
+# AddHandler cgi-script .php
